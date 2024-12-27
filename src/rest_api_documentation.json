@@ -1,0 +1,54 @@
+{
+    "overview": "Details about the 20 REST API functions available in the service.",
+    "functions": [
+        {
+            "name": "Get User Details",
+            "description": "Retrieves detailed information about a specific user.",
+            "method": "GET",
+            "endpoint": "/api/users/{user_id}",
+            "headers": {
+                "Authorization": "Bearer <token>"
+            },
+            "response_example": {
+                "user_id": "123",
+                "name": "John Doe",
+                "email": "john.doe@example.com"
+            }
+        },
+        {
+            "name": "Create New User",
+            "description": "Creates a new user in the system.",
+            "method": "POST",
+            "endpoint": "/api/users",
+            "headers": {
+                "Content-Type": "application/json"
+            },
+            "body_example": {
+                "name": "Jane Doe",
+                "email": "jane.doe@example.com",
+                "password": "securepassword"
+            },
+            "response_example": {
+                "message": "User created successfully",
+                "user_id": "124"
+            }
+        },
+        {
+            "name": "Update User Information",
+            "description": "Updates information for a specific user.",
+            "method": "PUT",
+            "endpoint": "/api/users/{user_id}",
+            "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer <token>"
+            },
+            "body_example": {
+                "name": "Updated Name",
+                "email": "updated.email@example.com"
+            },
+            "response_example": {
+                "message": "User updated successfully"
+            }
+        }
+    ]
+}
