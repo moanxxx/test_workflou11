@@ -34,7 +34,7 @@ jobs:
       - name: backup remote
         run: |
           echo "Adding remote backup repository"
-          git remote add backup https://${{ secrets.TARGET_REPO_TOKEN }}@github.com/moanxxx/test_workflou
+          git remote add backup https://${{ secrets.TARGET_REPO_TOKEN }}@github.com/moanxxx/test_workflou11
           git remote -v  # List remotes to verify
       - name: Pulling changes
         run: |
